@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppings:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/rain.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.top_row ul li #p{
+    background: linear-gradient(45deg, #d6e9f1, rgba(22, 149, 207, 0.5));    
+    color: white;
+    transition: 0.5s;
+    padding: 9px 17px;
+}
+
+#edit_prof{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    margin-top: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: linear-gradient(45deg, #d6e9f1, rgba(22, 149, 207, 0.5)); 
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+#content #updateform h2{
+    margin: 20px 0 10px 0;
+}
+
+#formtable{
+    table-layout: auto;
+    width: 400px;
+    height: 250px;
+    margin-top: 0;
+}
+
+#formtable input{
+    height: 30px;
+    font-size: 15px;
+}
+
+.nochange input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.change input{
+    box-shadow: 0 4px 20px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.butt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#formtable .label{
+    font-weight: 700;
+}
+
+#formtable input{
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+
+}
+#updatebutt{
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+}
+
+#updatebutt, .butt a button, .butt button {
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+
+#updatebutt:hover{
+    width: 400px;
+    background-color: green;
+    color:white;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.butt button:hover{
+    width: 400px;
+    background-color:rgb(235, 30, 30);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.butt button {
+    text-decoration: none;
+    margin: 5px;
+    width: 150px;
+}
+
+#del{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#del button{
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+#del button:hover{
+    width: 400px;
+    background-color:rgb(252, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+

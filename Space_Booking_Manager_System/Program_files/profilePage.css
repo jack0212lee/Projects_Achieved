@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppings:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/rain.png");
+    background-size: cover;
+}
+
+.top_row ul li #p{
+    background: linear-gradient(45deg, #d6e9f1, rgba(22, 149, 207, 0.5));    
+    color: white;
+    transition: 0.5s;
+    padding: 9px 17px;
+}
+
+.container {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.container .profile{
+    margin-top: 20px;
+}
+#user_prof{
+    table-layout: auto;
+    width: 400px;
+    height: 300px;
+    box-shadow: 4px 4px 6px black;
+    background: linear-gradient(45deg, #c0e1f0, rgba(22, 149, 207, 0.5));    
+    border-radius: 3px;
+}
+
+.container .personal_prof{
+    margin: 10px;
+}
+
+
+.container .personal_prof .profile .data{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.container .personal_prof .edit_button a{
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px grey;
+    transition: 0.5s;
+}
+
+.container .personal_prof .edit_button a:hover{
+    width: 150px;
+    height: 40px;
+    transition: 0.5s;
+    color: white;
+    background: linear-gradient(45deg, #c0e1f0, rgba(22, 149, 207, 0.5)); 
+    box-shadow: 2px 2px 5px grey;
+}
+

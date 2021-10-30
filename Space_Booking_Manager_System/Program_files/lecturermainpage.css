@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppings:100,200,300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/rain.png);
+
+    background-size:cover;
+}
+
+#greetings{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.container .hexagon{
+    position: relative ;
+    width: 360px;
+    height: 450px;
+    margin: 30px 50px 0px;
+}
+
+.container .hexagon:before{ /*shadow of hexagon*/
+    content: '';
+    position: absolute;
+    bottom: -25px; /* move the hexagon shadow from middle to the bottom*/
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,1), transparent, transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.container .hexagon:hover:before{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.container .hexagon .option{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: polygon(0 25%,50% 0, 100% 25%, 100% 75%, 50% 100%,0 75%); /*turn the shape into hexagon*/
+    transition: 0.5s;
+}
+
+.container .hexagon .option img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .hexagon .option .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(45deg, #03a9f4, rgba(3,169,244,.5));
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .hexagon .option .caption a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.container .hexagon .option .caption a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.container .hexagon .option:hover .caption{
+    opacity: 1;
+}
+
+.container .hexagon:hover .option{
+    transform: translateY(-20px);
+}
+
